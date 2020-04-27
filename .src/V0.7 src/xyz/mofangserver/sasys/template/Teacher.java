@@ -95,7 +95,6 @@ public class Teacher {
 		this.classProj = classProj;
 	}
 
-	@Override
 	public final String toString() {
 		String msg = "\t" + this.No + "\t" + this.name + "\t" + this.age + "\t" + this.gender + "\t" + this.getProjDate
 				+ "\t" + this.Proj + "\t" + this.classProj + "\t" + this.khMark;

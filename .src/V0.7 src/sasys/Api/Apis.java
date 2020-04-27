@@ -12,7 +12,7 @@ import xyz.mofangserver.sasys.template.*;
  * @serial SASYS(StudentAdminSystem)
  * <br> 使用方法:在所需要API类中继承该类
  */
-public abstract class Apis  {
+public abstract class Apis {
 	protected double apiversion = 0.1;
 
 	/**
@@ -140,12 +140,12 @@ public abstract class Apis  {
 		Administrators[] arr = new Administrators[amount];
 		return arr;
 	}
-	
+
 	/**
 	 * <code> 确认使用API </code>
 	 * <br><strong> 实现此方法即可使用本API </strong>
 	 * <br><strong> 返回类型: void </strong>
 	 * <br><span> 例如:void submits() {} </span>
 	 */
-	protected abstract void submits();
+	abstract void submits();
 }

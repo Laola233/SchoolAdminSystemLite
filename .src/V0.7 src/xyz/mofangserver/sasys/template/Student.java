@@ -164,7 +164,6 @@ public class Student {
 				+ this.political;
 	}
 
-	@Override
 	public final String toString() {
 		String msg = "\t" + this.on + "\t" + this.name + "\t" + this.age + "\t" + this.gender + "\t" + this.enterdate
 				+ "\t" + this.educatenum + "\t" + this.chinese + "\t" + this.maths + "\t" + this.english + "\t"
