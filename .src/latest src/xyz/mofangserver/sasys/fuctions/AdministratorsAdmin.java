@@ -1,6 +1,5 @@
 package xyz.mofangserver.sasys.fuctions;
 
-
 import xyz.mofangserver.sasys.template.*;
 
 /**
