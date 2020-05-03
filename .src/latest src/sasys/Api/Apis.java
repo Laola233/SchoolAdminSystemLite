@@ -781,7 +781,7 @@ public abstract class Apis {
 	 */
 	public final void cloneIMF(int targetno, int clonetargetno, Administrators[] arr, boolean submits) {
 		if (submits) {
-			if (exist(clonetargetno, targetno, arr)) {
+			if (exist(targetno, clonetargetno, arr)) {
 				arr[clonetargetno].setName(arr[targetno].getName());
 				arr[clonetargetno].setAge(arr[targetno].getAge());
 				arr[clonetargetno].setGender(arr[targetno].getGender());
