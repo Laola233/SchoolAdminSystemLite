@@ -5,9 +5,9 @@ import xyz.mofangserver.sasys.template.*;
 
 /**
  * @author z_yu
- * @version 0.1
- * @serial SASYS(StudentAdminSystem)
- * @since 0.1
+ * @version 0.3
+ * @serial SASYS(SchoolAdminSystem)
+ * @since 0.3
  */
 public class PrintMarks {
 	@SuppressWarnings("static-access")

@@ -6,9 +6,9 @@ import xyz.mofangserver.sasys.template.*;
 
 /**
  * @author z_yu
- * @serial SASYS(StudentAdminSystem)
+ * @serial SASYS(SchoolAdminSystem)
  * @version 0.1
- * @since 0.1
+ * @since 0.5
  */
 public class TeacherAdmin {
 	public static String say = "\t编号\t姓名\t年龄\t性别\t加入学校日期\t\t\t负责学科\t负责班级\t\t考核分";

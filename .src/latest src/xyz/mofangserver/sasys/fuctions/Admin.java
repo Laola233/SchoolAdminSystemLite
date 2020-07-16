@@ -6,7 +6,8 @@ import java.util.Scanner;
 /**
  * @author z_yu
  * @version 0.1
- * @serial SASYS(StudentAdminSystem)
+ * @serial SASYS(SchoolAdminSystem)
+ * @since SASYS 0.1
  */
 public class Admin {
 	public final static String say = "\t编号\t姓名\t年龄\t性别\t入学时间\t\t学籍号\t语文成绩\t数学成绩\t英语成绩\t物理成绩\t化学成绩\t历史成绩\t政治成绩\t总分\t平均分";

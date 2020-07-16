@@ -6,8 +6,8 @@ import xyz.mofangserver.sasys.template.*;
 /**
  * @author z_yu
  * @version 0.1
- * @serial SASYS(StudentAdminSystem)
- * @since 0.1
+ * @serial SASYS(SchoolAdminSystem)
+ * @since 0.3
  */
 public class PrintInfo {
 	@SuppressWarnings("static-access")

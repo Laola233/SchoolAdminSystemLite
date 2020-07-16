@@ -1,10 +1,16 @@
 # SASYS
+SchoolAdminSystemLite
+
 A simple SchoolAdminSystem java program.          
 
-Usage: Enter java -jar SASYS-latest.jar in cmd  
+Usage: Enter  java -jar SchoolAdminSystemLite-FINAL.jar  in cmd  
 
 Language Support: Simplified Chinese
 
-Web Javadoc: http://laola233-github.mofangserver.xyz/SASYS/javadoc/
+Version: V1.0
+
+Final Version published.SchoolAdminSystemPro coming soon...
+
+Web Javadoc: None
 
 

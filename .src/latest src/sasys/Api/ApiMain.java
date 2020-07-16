@@ -1,5 +1,13 @@
 package sasys.Api;
 
+/**
+ * 
+ * @author z_yu
+ * @version 0.2
+ * @deprecated
+ * @serial SASYS(SchoolAdminSystem)
+ * @since 0.6
+ */
 public class ApiMain {
 	public String welcome() {
 		return "ª∂”≠ π”√SASYS API";

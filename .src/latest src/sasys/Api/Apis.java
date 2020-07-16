@@ -6,8 +6,8 @@ import xyz.mofangserver.sasys.template.*;
 
 /**
  * @author z_yu
- * @version 0.1
- * @since 0.1 <br>
+ * @version 0.9
+ * @since 0.6 <br>
  *        SASYS(StudentAdminSystem)的API
  * @serial SASYS(StudentAdminSystem) <br>
  *         使用方法:在所需要API类中继承该类
@@ -672,7 +672,7 @@ public abstract class Apis {
 	 *                      </strong>
 	 * @since SASYS 0.9
 	 */
-	public final void cloneIMF(int clonetargetno, int targetno, Administrators[] arr, String cloneINF1,
+	public final void cloneIMF(int targetno, int clonetargetno, Administrators[] arr, String cloneINF1,
 			String cloneINF2) {
 		if (exist(targetno, clonetargetno, arr)) {
 			if (cloneINF1.equals("name") || cloneINF1.equals("age") || cloneINF1.equals("gender")
@@ -791,6 +791,77 @@ public abstract class Apis {
 			}
 		} else {
 			System.err.println("未允许克隆!");
+		}
+	}
+
+	/**
+	 * <code>打印所有学生的各项信息</code> <br>
+	 * <strong>注意,如果输出的值为哈希码值,请检查你学生类是否覆盖了toString方法!</strong> <br>
+	 * <strong>学生类toString方法标准写法:</strong> <br>
+	 * <code>@Override</code> <br>
+	 * <code>public final String toString() {</code> <br>
+	 * <code>&nbsp&nbsp&nbsp&nbspString msg = "\t" + this.on + "\t" + this.name + "\t" + this.age + "\t" + this.gender + "\t" + this.enterdate</code>
+	 * <br>
+	 * <code>		+ "\t" + this.educatenum + "\t" + this.chinese + "\t" + this.maths + "\t" + this.english + "\t"</code>
+	 * <br>
+	 * <code>		+ this.physics + "\t" + this.chemistry + "\t" + this.history + "\t" + this.political + "\t" + this.sum</code>
+	 * <br>
+	 * <code>		+ "\t" + this.avg;</code> <br>
+	 * <code>&nbsp&nbsp&nbsp&nbspreturn msg;</code> <br>
+	 * <code>}</code>
+	 * 
+	 * @param arr 学生数组
+	 */
+	public final void printArraysAllTargetInfo(Student[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] != null) {
+				System.out.println(arr[i]);
+			}
+		}
+	}
+
+	/**
+	 * <code>打印所有教师的各项信息</code> <br>
+	 * <strong>注意,如果输出的值为哈希码值,请检查你教师类是否覆盖了toString方法!</strong> <br>
+	 * <strong>教师类toString方法标准写法:</strong> <br>
+	 * <code>@Override</code> <br>
+	 * <code>public final String toString() {</code> <br>
+	 * <code>&nbsp&nbsp&nbsp&nbspString msg = "\t" + this.No + "\t" + this.name + "\t" + this.age + "\t" + this.gender + "\t" + this.getProjDate</code>
+	 * <br>
+	 * <code>		+ "\t" + this.Proj + "\t" + this.classProj + "\t" + this.khMark;</code>
+	 * <br>
+	 * <code>&nbsp&nbsp&nbsp&nbspreturn msg;</code> <br>
+	 * <code> }</code>
+	 * 
+	 * @param arr 教师数组
+	 */
+	public final void printArraysAllTargetInfo(Teacher[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] != null) {
+				System.out.println(arr[i]);
+			}
+		}
+	}
+
+	/**
+	 * <code>打印所有管理人员信息</code> <br>
+	 * <strong>注意,如果输出的值为哈希码值,请检查你管理人员类是否覆盖了toString方法!</strong> <br>
+	 * <strong>管理人员类toString方法标准写法:</strong> <br>
+	 * <code>@Override <br>
+	 * <code>public final String toString() { <br>
+	 * <code>&nbsp&nbsp&nbsp&nbspString msg = "\t" + this.No + "\t" + this.name +
+	 * "\t" + this.age + "\t" + this.gender + "\t" + this.getJobDate <br>
+	 * <code> + "\t" + this.Job + "\t" + this.adminClasses; <br>
+	 * <code>&nbsp&nbsp&nbsp&nbspreturn msg; <br>
+	 * <code>}
+	 * 
+	 * @param arr 管理人员数组
+	 */
+	public final void printArraysAllTargetInfo(Administrators[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] != null) {
+				System.out.println(arr[i]);
+			}
 		}
 	}
 

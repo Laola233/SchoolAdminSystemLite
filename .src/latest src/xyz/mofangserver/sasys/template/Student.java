@@ -3,7 +3,7 @@ package xyz.mofangserver.sasys.template;
 /**
  * @author z_yu
  * @version 0.1
- * @serial SASYS(StudentAdminSystem)
+ * @serial SASYS(SchoolAdminSystem)
  * @since 0.1
  */
 public class Student {
@@ -24,7 +24,7 @@ public class Student {
 	private double sum;
 	private double avg;
 	private int on;
-
+	
 	public final void setOn(int on) {
 		this.on = on;
 	}

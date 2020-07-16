@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 /**
  * @author z_yu
- * @version 0.1
- * @serial SASYS(StudentAdminSystem)
+ * @version 0.6
+ * @serial SASYS(SchoolAdminSystem)
  * @since 0.1
  */
 public final class Main {
@@ -21,6 +21,7 @@ public final class Main {
 		String Equals;
 		@SuppressWarnings("resource")
 		Scanner setIn = new Scanner(System.in);
+		EmptyPlaceholder phr = new EmptyPlaceholder();
 		Admin a = new Admin();
 		AdministratorsAdmin c1 = new AdministratorsAdmin();
 		TeacherAdmin c2 = new TeacherAdmin();
@@ -41,6 +42,7 @@ public final class Main {
 		System.out.println();
 		System.out.println();
 		while (true) {
+			phr.printPlaceholder(2);
 			System.out.println("========学校管理系统========");
 			System.out.println("现在时间:" + time.Date());
 			System.out.println("1:进入学生管理系统");
@@ -57,6 +59,7 @@ public final class Main {
 			switch (chose1) {
 			case 1:
 				while (true) {
+					phr.printPlaceholder(2);
 					System.out.println("==========学生管理系统==========");
 					System.out.println("1:添加一个学生");
 					System.out.println("2:查找一个学生");
@@ -143,6 +146,7 @@ public final class Main {
 						System.out.println("执行按照总分排序操作");
 						a.setSumSort(stuArr);
 					} else if (Equals.contentEquals("666")) {
+						phr.printPlaceholder(true);
 						System.out.println("您已经退出学生管理系统!");
 						break;
 					} else if (Equals.equals("8")) {
@@ -173,6 +177,7 @@ public final class Main {
 					PrintInfo a3 = new PrintInfo();
 					PrintMarks a4 = new PrintMarks();
 					TeacherAdmin a2 = new TeacherAdmin();
+					phr.printPlaceholder(2);
 					System.out.println("==========教师管理系统==========");
 					System.out.println("1:添加一个老师");
 					System.out.println("2:查找一个老师");
@@ -242,6 +247,7 @@ public final class Main {
 						int No = setIn.nextInt();
 						a4.printTeaKHMarks(No, teaArr);
 					} else if (Equals.equals("666")) {
+						phr.printPlaceholder(true);
 						System.out.println("您已退出教师管理系统!");
 						break;
 					} else if (Equals.equals("8")) {
@@ -281,6 +287,7 @@ public final class Main {
 			case 3:
 				while (true) {
 					AdministratorsAdmin ad1 = new AdministratorsAdmin();
+					phr.printPlaceholder(2);
 					System.out.println("==========管理人员管理系统==========");
 					System.out.println("1:添加一个管理人员");
 					System.out.println("2:查找一个管理人员");
@@ -353,6 +360,7 @@ public final class Main {
 						String adminClassesezj = setIn.next();
 						ad1.setAdminClasses(Nozj, adminClassesezj, admArr);
 					} else if (Equals.equals("666")) {
+						phr.printPlaceholder(true);
 						System.out.println("您已退出管理人员系统!");
 						break;
 					} else if (Equals.equals("7")) {
@@ -370,6 +378,7 @@ public final class Main {
 					Student b = new Student();
 					Teacher b1 = new Teacher();
 					Administrators b2 = new Administrators();
+					phr.printPlaceholder(2);
 					System.out.println("==========模板管理==========");
 					System.out.println("1:查看模板启用情况");
 					System.out.println("2:设置模板启动情况");
@@ -413,12 +422,14 @@ public final class Main {
 							}
 						}
 					} else if (Equals.equals("666")) {
+						phr.printPlaceholder(true);
 						System.out.println("您已经退出模板管理!");
 						break;
 					}
 				}
 				break;
 			case 666:
+				phr.printPlaceholder(true);
 				System.out.println("您已退出学校管理系统!");
 				System.exit(0);
 			}

@@ -3,8 +3,8 @@ package xyz.mofangserver.sasys.template;
 /**
  * @author z_yu
  * @version 0.1
- * @since 0.1
- * @serial SASYS(StudentAdminSystem)
+ * @since 0.5
+ * @serial SASYS(SchoolAdminSystem)
  */
 public class Administrators {
 	private static boolean isEnabled = true; // Whether this template should be enabled?

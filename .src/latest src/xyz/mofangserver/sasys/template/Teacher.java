@@ -2,9 +2,9 @@ package xyz.mofangserver.sasys.template;
 
 /**
  * @author z_yu
- * @version 1.0
- * @serial SASYS(StudentAdminSystem)
- * @since 0.1
+ * @version 0.1
+ * @serial SASYS(SchoolAdminSystem)
+ * @since 0.3
  */
 public class Teacher {
 	private static boolean isEnabled = true; // Whether this template should be enabled?
@@ -17,7 +17,7 @@ public class Teacher {
 	private String Proj;
 	private String classProj;
 	private double khMark;
-
+	
 	public final static boolean getIsEnabled() {
 		return isEnabled;
 	}
