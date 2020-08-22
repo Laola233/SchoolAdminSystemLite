@@ -9,8 +9,8 @@ Language Support: Simplified Chinese
 
 Version: V1.1
 
-Final Version published.SchoolAdminSystemPro coming soon...
+SchoolAdminSystemPro published!
 
-Web Javadoc: None
+Web Javadoc: http://mofangserver.xyz/WebJavaDoc/SchoolAdminSystemLite/
 
 
