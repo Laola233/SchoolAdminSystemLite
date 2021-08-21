@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"icu.mofangserver.SchoolAdminSystemLite.fuctions"},{"l":"icu.mofangserver.SchoolAdminSystemLite.main"},{"l":"icu.mofangserver.SchoolAdminSystemLite.template"},{"l":"SchoolAdminSystemLite.Api"},{"l":"所有程序包","u":"allpackages-index.html"}];updateSearchResults();
