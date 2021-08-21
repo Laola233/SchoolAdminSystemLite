@@ -1,4 +1,4 @@
-# SASYS
+# SchoolAdminSystemLite
 SchoolAdminSystemLite
 
 A simple SchoolAdminSystem java program.          
